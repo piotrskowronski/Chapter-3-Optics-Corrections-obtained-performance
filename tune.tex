@@ -56,8 +56,7 @@ Since the beam normally only does 4 turns in the combiner ring
 the closed orbit is not well-determined. 
 \begin{figure}[!h]
 \centering
-%\includegraphics[scale=0.26,natwidth=1186,natheight=865]{fit_BPM8.png}
-\includegraphics[scale=0.26]{fit_BPM8.png}
+\includegraphics[width=0.66\linewidth]{fit_BPM8.png}
 \caption{A sinusoidal fit over the position for different turns. \label{fig:fitOfPosition}}
 \end{figure}
 All fits were checked manually and if seen to fit the signal they were accepted and
@@ -74,44 +73,22 @@ Depending on if the quadrupole is focusing or
 defocusing in that plane and if the tune goes up or down it is possible to 
 determine if the tune is above or below 0.5.  
 
-All measurements that were made are summarised in Table~\ref{tab:tuneMeasureTime}. 
 The number in the table corresponds to the number on the x-axis in 
 Figure~\ref{fig:tuneModelVsMeasureHorizontal} and \ref{fig:tuneModelVsMeasureVertical}
-\begin{table}[ht]
-\centering
-\begin{tabular}{| l | c | c |}
-\hline
-\textbf{number} & \textbf{time} & \textbf{change} \\ \hline
-1 & 09:36:55 & 1\% down \\
-2 & 09:34:30 & ref \\
-3 & 10:01:31 & 0.5\% down \\
-4 & 10:04:45 & 0.6\% down   \\
-5 & 10:08:37 & 1.5\% down  \\
-6 & 10:16:00 & 0.5\% down  CR.IQFF0510 up 1.5\% \\
-7 & 10:27:20 & 0.5\% down  CR.IQFF0510 up 1.7\% \\
-8 & 10:30:20 & 0.5\% down  CR.IQFF0510 down 6\% \\
-9 & 10:35:00  & 0.5\% down  CR.IQDF0540 down 25\% \\
-10 & 10:37:52 &  0.5\% down \\
-11 & 10:43:48 &  0.5\% down  CR.IQDF0540 up 5\% \\
-12 & 10:48:02 &  0.5\% down  CR.IQDH0340 down 11\% \\
-13 & 10:50:05 &  0.5\% down  CR.IQDH0340 up 5\% \\
-14 & 10:54:53 &  0.5\% down  quick test with sextupoles \\
-\hline
-\end{tabular}
-\caption[Time and numbering of the tune measurement.]
-{The column to the left corresponds to the x-label in 
-figure \ref{fig:tuneModelVsMeasureHorizontal} and \ref{fig:tuneModelVsMeasureVertical}. 
-The middle column is the time when the measurement was taken and 
-the column to the right shows the change in the machine.  \label{tab:tuneMeasureTime}}
-\end{table}
+
 \begin{figure}[!h]
 \centering
-%\includegraphics[scale=0.30,natwidth=1253,natheight=719]{horizontal_tuneVsModel.png}
-\includegraphics[scale=0.30]{horizontal_tuneVsModel.png}
-\caption[Comparison between the tune from the model and the measurement in the horizontal plane]
-{Comparison between the model, marked as *, 
-and the measurement represented with the red error bars in the horizontal plane. 
-\label{fig:tuneModelVsMeasureHorizontal}}
+\subfloat[]{
+\includegraphics[width=0.49\linewidth]{horizontal_tuneVsModel.png}
+\label{fig:tuneModelVsMeasureHorizontal}
+}
+\subfloat[]{
+\includegraphics[width=0.49\linewidth]{vertical_tuneVsModel.png}
+\label{fig:tuneModelVsMeasureVertical}
+}
+\caption[Comparison between the tune from the model and the measurement]
+{Comparison between the model, marked as *, and the measurement represented with the red error bars. 
+}
 \end{figure}
  
 The horizontal tunes for the different measurements series are presented in 
@@ -123,15 +100,8 @@ Recalling that the error bars are only 1 $\sigma$ we expect
 thus it is not possible to conclude that there is any error in the model. 
 Nevertheless, it seems like the model slightly overestimates 
 the change in tune when varying the focusing of a quadrupole.
- 
-\begin{figure}[!h]
-\centering
-%\includegraphics[scale=0.26,natwidth=1253,natheight=719]{vertical_tuneVsModel.png}
-\includegraphics[scale=0.26]{vertical_tuneVsModel.png}
-\caption[Comparison between the tune from the model and the measurement in the vertical plane]
-{Comparison between the model, marked as *, and the measurement represented with 
-the red error bars in the vertical plane \label{fig:tuneModelVsMeasureVertical}}
-\end{figure}
+
+
 In the case of the vertical tune, shown in figure \ref{fig:tuneModelVsMeasureVertical}. 
 In this case three points are outside the error bar, which is close to the prediction. 
 The fact that one of them is 2 $\sigma$ away is expected if we have 14 points.
