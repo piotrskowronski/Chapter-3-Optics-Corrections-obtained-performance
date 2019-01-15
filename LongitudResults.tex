@@ -1,0 +1,109 @@
+\section{Bunch length and energy spread results}
+
+The drive beam injector was delivering the beam with the energy spread of 0.6\% 
+and it was preserved by the linac. 
+However, the phase switches affected the momentum distribution and it was 0.X\%.
+The corresponding bunch length was measured was XX~ps.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Davide paper MOPAB114
+%\section{Drive Beam}
+
+%%%%%%%%%%
+\subsection{Indirect measurement}
+{\color{red} All values here to be confirmed.}
+In the spectrometer at girder 4 we normally measured $E_0\approx18$~MeV and 
+energy spread (FWHM) $\delta E_0 \approx 5 \% = 0.9$~MeV.
+In the spectrometer at girder 10 we normally measured $E_0\approx64$~MeV and 
+energy spread (FWHM) $\delta E_0 \approx 2.8 \% = 1.79$~MeV.
+In CTS we measured about $E \approx 135$~MeV and energy spread 
+(FWHM) $\delta E \approx 1.5 \% = 2.03$~MeV.
+%
+In absolute number we see an increase of energy spread from the injector to the end of the linac.
+Let us assume that the acceleration was always on crest in the whole linac, i.e. $\phi = 0$ and 
+so we can use directly Eq.~\ref{eq:energySpreadIncreaseOnCrest} to extract the bunch length:
+%
+\begin{align}
+\cos\left(\frac{\delta \phi}{2}\right) &= 1 - \frac{\Delta \delta E}{E_{max}}.
+\label{eq:simplestBunchLengthMeas}
+\end{align}
+%
+We can apply Eq.~\ref{eq:simplestBunchLengthMeas} for the three different cases: CTS--04; CTS--10; 10--04.
+In these three cases the bunch length $\delta \phi$ results to be: 15.7, 9.4; 22.6~deg FWHM.
+%
+The RF at CTF3 has a frequency of 3 GHz. This means that 1 deg is equivalent to $0.926$~ps, 
+so the previous results are approximately equivalent in~ps.
+Note that the nominal bunch length is expected to be of the order of 1~mm~r.m.s, 
+which is about $2.355 \times 3.333 = 7.8$~ps~FWHM.
+
+
+
+%%%%%%%%%%
+\subsection{Direct measurement}
+%
+Figure~\ref{fig:scanDriveBeam} shows a scan performed at the end of the Drive Beam linac in 
+the CTS spectrometer.
+%
+\begin{figure}[htb]
+   \centering
+   \includegraphics*[width=0.66\columnwidth]{MOPAB114f2_v2.eps}
+   \caption{Energy (blue) and Energy spread (red) as a function the last two 
+            DB linac accelerating structures. Dashed are the expected values obtained from 
+            the fitted bunch length.}
+   \label{fig:scanDriveBeam}
+\end{figure}
+%
+From the fit discussed in the previous section~\ref{sec:rfphasescans} it was possible to measure the following parameters:
+%
+\begin{itemize}
+\item
+$\delta\phi_{s} = 3.3 \pm 0.1$ ps r.m.s.; 
+ \item
+$\delta E_0 = 0.68 \pm 0.01$ \%;
+\item 
+$\phi_{beam} = -1.2 \pm 0.1$ deg@3GHz;
+\item 
+$C = 0.15 \pm 0.01$ \% r.m.s. / ps 
+\end{itemize}
+%
+Note that 3.3~ps matches the nominal bunch length value.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Probe Beam}
+% measured with a x5; 15 A DB  on Wed 14th Dec 2016; file_name = 'RFdata_2015.mat'
+Figure~\ref{fig:scanProbeBeam} shows the result of a similar scan on the Probe beam.
+In this case the arrival phase of the Probe Beam has been varied with respect to the DB-generated RF. 
+Thanks to the higher frequency of RF it was possible to scan over the full 360 degrees at 12 GHz, 
+giving a more precise fit.
+%
+\begin{figure}[htb]
+   \centering
+   \includegraphics*[width=0.66\columnwidth]{MOPAB114f3.eps}
+   \caption{Energy (blue) and Energy spread (red) as a function the Probe Beam phase with respect to 
+            the DB-generated RF. Dashed are the expected values obtained from the fitted bunch length.}
+   \label{fig:scanProbeBeam}
+\end{figure}
+%
+The fitted values in this case (for the Probe Beam) are:
+%
+\begin{itemize}
+\item
+$E_0 = 198.7 \pm 0.1$ MeV; 
+\item
+$\Delta E_{max} = 26.3 \pm 0.1$ MeV; 
+%
+\item
+$\delta\phi_{s} = 2.69 \pm 0.02$ ps r.m.s.; 
+ \item
+$\delta E_0 = 0.46 \pm 0.04$ \%;
+\item 
+$\phi_{beam} = 5.6 \pm 0.4$ deg@12GHz;
+\item 
+$C = -0.08 \pm 0.08$ \% r.m.s. / ps 
+\end{itemize}
+%
+%
+Also in this case the value obtained is compatible with the expected Probe Beam bunch length.
+
+

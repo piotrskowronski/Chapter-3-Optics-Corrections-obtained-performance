@@ -1,0 +1,21 @@
+\subsection{Orbit Response Matrix}
+
+The initial optics checks were done using Orbit Response Matrix method, where each
+orbit corrector magnet is powered to observe the downstream orbit response. 
+This way transfer matrix coefficient $R_{12}$ between the corrector magnet and 
+the downstram BPMs is directly measured and can be compared
+with the model values.
+
+For each orbit measurement at least 5 consecutive shots were acquired, usually 7 or 10.
+In a simple case the amplitude of the corrector excitations was the same for all devices
+and was chosen to be the largest not provoking any important beam losses.
+In order to maximize accuracy, in more sophisticated variant of the method, the excitation was
+gradually increased for each corrector until the beam was fully transported over
+4-5 downstream BPMs. For each BPM the measured offsets were plotted in function of 
+the corrsponding corrector excitation currents and 
+fitted in the range where no beam loss at given BPM was observed.
+The tool was implemented in a MatLab script that 
+fully automatized the measurement. 
+The main results are listed in Section~\ref{sec:03_ModelImprovs}
+
+

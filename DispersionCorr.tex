@@ -1,0 +1,187 @@
+\subsection{Dispersion corrections}
+
+In CTF3 two methods were tried for correcting dispersion errors:
+with quadrupoles, using dedicated knobs that modifed only dispersion without changing beta functions,
+and Dispersion Free Steering.  
+At several occations the two were compared and in CTF3 DFS was always much more efficient.
+Global quadrupolar corrections that would correct simoultaneously dispersion and beta functions
+were difficult to find because the beta functions were very sensitive to focusing changes
+and often quadrupoles were powered in series. Also, until Phase Space Painting was 
+made fully operational, precise beta function measurements were possible only 
+at few locations (with quadrupolar scans using profile monitors).
+Therefore, correcting first beta functions and dispersion idependently with DFS
+was naturally easier. Of course, there was a risk that created orbit was
+misaligned what would make sextupolar corrections tricky.
+
+\tb{Taken from Davide's LINAC16 paper}
+
+Figure~\ref{fig:linacDFS} shows the result of applying DFS in the CTF3 linac. 
+%
+\begin{figure}[!htb]
+   \centering
+   \includegraphics*[width=0.6\columnwidth]{MOPRC008f2.eps}
+   \caption{Horizontal dispersion along the linac at CTF3.
+   Black is the design dispersion.
+   Red and blue are the actual dispersions measured by changing the beam energy before and after DFS respectively.}
+   \label{fig:linacDFS}
+\end{figure}
+%
+The correction was performed by first \emph{measuring} directly on the machine the response matrix of 
+all dipole correctors in the linac.
+Note the reduction in spurious dispersion below 5~mm.
+At the same time a similar correction was performed in the vertical plane reducing 
+the vertical dispersion from about 10 mm to less than 1 mm \cite{bib:DavideThesis}.
+The effect of those corrections was extremely beneficial for the final beam quality.
+Table~\ref{tab:TwissResultLinac} shows the Twiss parameters of the beam measured at 
+the end of the linac before and after DFS in the two planes.
+It is remarkable that the observed emittance was reduced by more than 15~\% in both planes, 
+which is proof of the effectiveness of DFS%
+\footnote{The asymmetry between the horizontal and vertical emittances was probably due to errors at the source, lately corrected by other means.}. 
+%
+\begin{table*}[htbp]
+\centering
+\caption{
+Transverse Twiss parameters of the beam measured at the end of the Drive Beam linac at CTF3 before and after DFS in the linac.
+Also shown are the nominal Twiss parameters for the ideal machine.}
+\begin{tabular}{r c c c c c c}
+\hline
+				& $\beta_x$  [m]	&  $\alpha_x$ 		&  $\epsilon_{Nx}$	 [$\mu$m]	 & $\beta_y$  [m]	&  $\alpha_y$ 		&  $\epsilon_{Ny}$	 [$\mu$m]	  \\
+\hline
+Nominal Twiss 	& $8.4$ 			& $-0.8$ 			& -- 						& $13.5$ 			& $-0.4$ 			& -- \\
+Before DFS		& $9.2 \pm 0.4$ 	& $-0.7 \pm 0.1$ 	& $\mathbf{63 \pm 1}$ 				& $11.3 \pm 1.2$	& $-0.1 \pm 0.1$	&  $\mathbf{129 \pm 8}$ \\
+After DFS			& $8.7 \pm 0.4$ 	& $-0.5 \pm 0.1$ 	& $\mathbf{52 \pm 1}$ 				& $10.3 \pm 1.0$	& $-0.1 \pm 0.1$	&  $\mathbf{102 \pm 5}$ \\
+\hline
+\end{tabular}
+\label{tab:TwissResultLinac}
+\end{table*}
+%
+
+
+DFS was performed also in the DBRC, but clearly only in the vertical plane where 
+no dispersion is expected by design.
+In the horizontal plane, where dispersion is non-zero by design in most location, 
+DTS has been tested.
+Note that for DTS one needs first to know the target dispersion.
+Naively one could try to target the design dispersion, 
+however any BPM calibration issue or a wrong set up of the quadrupoles strength would 
+drive the correction to an undesired state.
+Here the concept of ``nominal'' dispersion previously introduced becomes extremely useful.
+
+Figure~\ref{fig:CRDTS} shows the result of a DTS attempt in the CR at CTF3.
+%
+\begin{figure}[!htb]
+   \centering
+   \includegraphics*[width=0.6\columnwidth]{MOPRC008f3.eps}
+   \caption{Horizontal dispersion along the CR at CTF3.
+   Black is the design dispersion.
+   Green is the ``nominal'' dispersion measured by scaling the bending magnets of the ring, and it was used as target for DTS.
+   Red and blue are the actual dispersions measured by changing the beam energy before and after DTS respectively.}
+   \label{fig:CRDTS}
+\end{figure}
+%
+Note the discrepancy at $s \approx 67$ m between the design dispersion (black) and 
+the measured ``nominal'' dispersion (green) due to a mis-calibration of a BPM. 
+It is clear that if one would target the design dispersion at this location 
+one would have driven the line toward an undesired set-up.
+For this correction only dipole correctors inside the CR were used, 
+therefore in the first part of the ring DTS does not have enough degrees of freedom,
+but the correction starts to be effective in the second half of the ring.
+
+DTS is a promising technique, but further experimental verification are needed to 
+prove its effectiveness in improving the Drive Beam recombination quality.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Dispersion for machine set up and optimisation}
+%
+One of the recent improvements of the recombination process at CTF3 was 
+the optimisation of the DL optics in order to reduce the outgoing non-linear dispersion \cite{gambaIPAC16}.
+The ability of measuring non-linear dispersion turned out to be useful as a verification of the improvement.
+Figure~\ref{fig:DLnewOptics} shows a scatter plot of consecutive beam shots with different energies at 
+the first BPM after DL for the two different optics.
+%
+\begin{figure}[!htb]
+   \centering
+   \includegraphics*[width=0.6\columnwidth]{MOPRC008f4.eps}
+   \caption{Comparison of non-linear dispersion at the first BPM after the DL for two different DL optics.
+   Scatter plot of the mean position recorded at the BPM versus beam energy variation.}
+   \label{fig:DLnewOptics}
+\end{figure}
+The second order dispersion is clearly visible for both DL optics, but the effect is sensibly reduced for the new one (blue).
+
+Another important use of the dispersion as indicator of the quality of set-up is the use of 
+the ``nominal'' dispersion measurement previously introduced.
+Since such a measurement is not affected by misalignments, it gives a direct measurement of 
+the correctness of the quadrupole and relative dipole strengths.
+Figure~\ref{fig:CRfirstarc} shows one of these measurements in the first arc of the CR.
+%
+\begin{figure}[!htb]
+   \centering
+   \includegraphics*[width=0.6\columnwidth]{MOPRC008f5.eps}
+   \caption{Orbit response at the BPMs in the first arc of CR while scaling the ring dipoles.
+   Black is the design dispersion.
+   Coloured are actual measurements: the initial status (red) and scaling the arc quadrupoles by 
+   -1\% (yellow), +2\% (purple), +3\%(green).}
+   \label{fig:CRfirstarc}
+\end{figure}
+%
+Note that in the middle of the arc one expects a dispersion close to zero, while the initial measurement (red) 
+was measuring a ``nominal'' dispersion sensibly different from zero.
+By scaling up the quadrupoles in the arc the pattern got closer to the design (e.g. green).
+The improvement could be seen also observing the variation of the ring $R_{56}$.
+As one expects to measure the nominal $D_x$ while scaling the bending magnets,
+then one should be able to reveal at the same time the ``nominal'' $R_{56}$.
+The optics of the CR is meant to be isochronous \cite{bib:CTF3DesignReport}.
+For the purpose of beam recombination two RF deflectors are installed around the CR injection. 
+After one turn in the ring the beam is expected to cross the deflectors on zero-crossing. 
+Clearly if $R_{56}$ is non-zero, any variation of path length while scaling the bending magnets results in 
+a visible bump in the orbit, which is seen by the dispersion monitor application as actual ``nominal'' dispersion.
+Figure~\ref{fig:CRRFbump} shows this effect during the optimisation of the arc quadrupole strengths presented in 
+Figure~\ref{fig:CRfirstarc}.
+%
+\begin{figure}[!htb]
+\centering
+   \begin{tikzpicture}
+      \node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics*[width=0.6\columnwidth]{MOPRC008f6.eps}};
+      \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [dashed, thick, blue] (0.24,0.17) -- (0.24,0.9);
+        \draw [dashed, thick, blue] (0.80,0.17) -- (0.80,0.9);
+        %
+        \node[below, align=center, blue, fill=white] at (0.24,0.9) {\footnotesize RF def. 2};
+        \node[below, align=center, blue, fill=white] at (0.80,0.9) {\footnotesize RF def. 1};
+      \end{scope}
+   \end{tikzpicture}
+   \caption{Orbit response at the BPMs around the RF deflectors of the CR while scaling the ring dipoles for 
+            the same set-ups of Figure~\ref{fig:CRfirstarc}.
+            The additional blue measurement was performed with the initial quadrupole strengths but 
+            without RF into the deflectors.}
+   \label{fig:CRRFbump}
+\end{figure}
+%
+Note that also in terms of $R_{56}$ by scaling up the arc quadrupoles the optics got closer to nominal.
+As a proof that the effect was really given by the lengthening of the beam path, 
+note that when RF was removed from the deflector the effect disappeared (see blue curve in Figure~\ref{fig:CRRFbump}).
+
+From Figure~\ref{fig:CRRFbump} one can be more quantitative: the orbit excursion expected with the RF bump can be written as:
+\begin{equation}
+\Delta x \approx R_{56} \frac{\Delta p}{p_0} \frac{2 \pi}{\lambda_{RF}} x_{max}.
+\label{eq:orbitErrorDueToR56}
+\end{equation}
+%
+where $\lambda_{RF}$ is the RF wavelength and $x_{max}$ is the maximum orbit excursion expected when 
+the beam is crossing the cavities on crest. 
+By scaling the bending magnets one actually measures the overall linear coefficient of 
+Eq.~\ref{eq:orbitErrorDueToR56} with respect to 
+$\Delta p/p_0$.
+By knowing that $x_{max}\approx 25$ mm; $\lambda_{RF}\approx 10$ cm one can than estimate 
+$R_{56} \approx 0.16$~m before the correction (red) and $R_{56} \approx 0.04$~m after the correction (green).
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Conclusions}
+%
+\todo[inline]{Move to final conclusions}
+The ability of measuring and controlling dispersion in the different beam lines has been demonstrated.
+A series of examples has proven the potential of using dispersion not only for beam steering (DFS and DTS),
+but also as a mean for optics optimisation.
+

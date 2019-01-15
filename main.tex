@@ -1,0 +1,122 @@
+\documentclass[]{ctfreport}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Comments from Tobias 3 of August
+% 1. Abbreviations are used at some places but not everywhere.
+% 2. The tenses are different (sometimes it is like it happens now and sometimes in the past)... 
+% 3. 
+\graphicspath{{./}{figs/03/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[nohyperlinks]{acronym}
+\usepackage[colorinlistoftodos,textsize=tiny,textwidth=3.8cm]{todonotes}
+\usepackage{units}
+\usepackage{tikz}   % plots 
+\usepackage{subfloat}
+\usepackage{dsfont} % double line symbols in Davides equations
+
+% shortcuts used by Lukas in the review phase
+\newcommand{\tb}[1]{ % blue text
+                \textcolor{blue}{#1}}
+\newcommand{\tr}[1]{ % red text
+                \textcolor{red}{#1}}
+
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{etex}
+
+
+\usepackage{biblatex}
+\addbibresource{bibliography.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Chapter 3  \\ 
+       Optics measurement and corrections, \\
+       obtained drive beam performance in CTF3}
+       
+\author{CTF3}
+
+\begin{document}
+\maketitle
+
+%\begin{abstract}
+%\input{abstract.tex}
+%\end{abstract}
+
+\listoftodos
+\newpage
+
+\tableofcontents
+\newpage 
+
+\addtocounter{chapter}{2}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{intro.tex}
+
+%
+% M E A S U R E M E N T S 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\input{OrbitMeasurements.tex}
+\input{OrbitLengthMeasurements.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Optics Measurements}
+
+
+\input{DispersionMeas.tex}
+\input{QuadScans.tex}
+\input{ORM.tex}
+\input{PhSpPaint.tex}
+\input{tune.tex}
+\input{Decoherence.tex}
+\input{BunchLengthMeas.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Corrections Methods}
+
+\input{LinearFeedback.tex}
+\input{OrbitCorrections.tex}
+\input{ModelImprovs.tex}
+\input{QSrematchQS.tex}
+\input{DispersionCorr.tex}
+\input{OrbitClosure.tex}
+\input{InjectorEmittanceControl.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% RESULTS: Emittance
+\input{EmittanceResults.tex}
+\input{LongitudResults.tex}
+
+\input{Conclusions.tex}
+
+\input{Limitations.tex}
+
+
+\section{Conclusion}
+
+\newpage 
+\input{acronym.tex}
+
+
+\newpage 
+\printbibliography[title={References}]
+
+
+\end{document}
