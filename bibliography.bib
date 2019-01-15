@@ -360,7 +360,7 @@
 }
 
 
-@incollection{bib:InAndLinacLayout,
+@incollection{bib:DLLayout,
   author = {Rinolfi, L.},
   title = {Delay Loop layout},
   booktitle = { CERN EDMS },
@@ -439,6 +439,8 @@
       reportNumber  = "CERN-ATS-2009-132",
       url           = "https://cds.cern.ch/record/1225494",
 }
+
+
 
 @inproceedings{bib:DavideEmittOptimis1,
       author         = "Gamba, Davide and Burrows, Philip and Corsini, Roberto
@@ -661,62 +663,12 @@
     CrossRef    = "clic:linac08"
     }
 
-@incollection{bib:CTlineLayout,
-  author = {Rinolfi, L.},
-  title = {CT Line layout},
-  booktitle = { CERN EDMS },
-  number = {doc. no. 654643 v14},
-  url = {https://edms.cern.ch/document/654643/14},
-  year = {2007}
-}
-
-@inproceedings{bib:DavideEmittOptimis,
-      author         = "Gamba, Davide and Burrows, Philip and Corsini, Roberto
-                        and Skowronski, Piotr and Tecker, Frank",
-      title          = "{Effect and Optimisation of Non-Linear Chromatic
-                        Aberrations of the CLIC Drive Beam Recombination at CTF3}",
-      booktitle      = "{Proceedings, 7th International Particle Accelerator
-                        Conference (IPAC 2016): Busan, Korea, May 8-13, 2016}",
-      year           = "2016",
-      url            = "http://inspirehep.net/record/1470633/files/thpor032.pdf",
-      pages          = "THPOR032",
-      doi            = "10.18429/JACoW-IPAC2016-THPOR032",
-      SLACcitation   = "%%CITATION = INSPIRE-1470633;%%"
-} 
-
-
-@phdthesis{bib:DavideThesis,
-      author         = "Gamba, Davide",
-      title          = "{Online optimisation of the CLIC Drive Beam bunch train
-                        recombination at CTF3}",
-      school         = "CERN",
-      year           = "2016",
-      month          = "05",
-      url            = "http://inspirehep.net/record/1503521/files/CERN-THESIS-2016-153.pdf",
-      reportNumber   = "CERN-THESIS-2016-153",
-      SLACcitation   = "%%CITATION = CERN-THESIS-2016-153;%%"
-}
-
-
-@article{bib:CRRFdeflV2,
-      author         = "Alesini, David and Biscari, Caterina and Ghigo, Andrea
-                        and Marcellini, Fabio and Corsini, Roberto",
-      title          = "{Beam instability induced by rf deflectors in the
-                        combiner ring of the CLIC test facility and mitigation by
-                        damped deflecting structures}",
-      journal        = "Phys. Rev. ST Accel. Beams",
-      volume         = "14",
-      year           = "2011",
-      pages          = "022001",
-      doi            = "10.1103/PhysRevSTAB.14.022001",
-      SLACcitation   = "%%CITATION = PRSTA,14,022001;%%"
-}
 
 @thesis{bib:Jack_PhD,
       author        = "Roberts, Jack and Skowronski, Piotr and Christian, Glenn",
       title         = "{Development of a Beam-based Phase Feedforward
                        Demonstration at the CLIC Test Facility (CTF3)}",
-      month         = "Sep",
+      month         = "9",
       year          = "2016",
       reportNumber  = "CERN-THESIS-2016-289",
       url           = "https://cds.cern.ch/record/2263832",
@@ -780,22 +732,6 @@
       SLACcitation   = "%%CITATION = INSPIRE-1313735;%%"
 }
 
-
-@article{bib:CelsiusMachine,
-  author={C Ekstrom and E Fransen and K Gajewski and D Hallin and 
-          B Hemryd and H Herr and L Hermansson and P Jahnke and 
-          G Janson and A Johansson and O Johansson and T Johnson and 
-          P Lidbjork and T Lofnes and G Norman and D Reistad and 
-          P-U Renberg and M Sedlacek and H Sterner and 
-          O Svensson and R Wedberg and L Westerberg and J Xue},
-  title={The CELSIUS Project},
-  journal={Physica Scripta},
-  volume={1988},
-  number={T22},
-  pages={256},
-  url={http://stacks.iop.org/1402-4896/1988/i=T22/a=039},
-  year={1988}
-}
 
 @inproceedings{Chung:901051,
       author        = "Chung, Y and Decker, G and Evans, K",
@@ -898,13 +834,18 @@ author = "C.B. McKee and P.G. O'Shea and J.M.J. Madey"
   url = "https://www.mathworks.com/help/images/ref/iradon.html",
 }
 
+@misc{mat:solver,
+  title = "{MATLAB fsolve function}",
+  url = "https://www.mathworks.com/help/optim/ug/fsolve.html",
+}
+
 @techreport{Tenenbaum1997,
       author        = "Tenenbaum, P G",
       title         = "{Emittance measurements in CTF 2 drive beam}",
       institution   = "CERN",
       address       = "Geneva",
       number        = "CLIC-Note-326",
-      month         = "Feb",
+      month         = "2",
       year          = "1997",
       url           = "http://cds.cern.ch/record/321551",
 }
@@ -919,7 +860,7 @@ author = "C.B. McKee and P.G. O'Shea and J.M.J. Madey"
   pages = {104401},
   numpages = {9},
   year = {2014},
-  month = {Oct},
+  month = {10},
   publisher = {American Physical Society},
   doi = {10.1103/PhysRevSTAB.17.104401},
   url = {https://link.aps.org/doi/10.1103/PhysRevSTAB.17.104401}
@@ -958,11 +899,34 @@ author = "C.B. McKee and P.G. O'Shea and J.M.J. Madey"
   eprint    = {1404.1100}
 }
 
-@book{trefethen1997numerical
-  author    = {Lloyd N. Trefethen and
-               David Bau},
+@book{trefethen1997numerical,
+  author    = {Lloyd N. Trefethen and David Bau},
   title     = {Numerical linear algebra},
   publisher = {{SIAM}},
   year      = {1997},
   isbn      = {978-0-89871-361-9}
+}
+
+
+@phdthesis{Lohl2005,
+      author         = "Lohl, Florian",
+      title          = "{Measurements of the transverse emittance at the
+                        VUV-FEL}",
+      school         = "Hamburg U.",
+      year           = "2005",
+      doi            = "10.3204/DESY-THESIS-2005-014",
+      reportNumber   = "DESY-THESIS-2005-014, DESY-TESLA-FEL-2005-03",
+      SLACcitation   = "%%CITATION = DESY-THESIS-2005-014;%%"
+}
+
+@article{Hock2011,
+      author         = "Hock, K. M. and Ibison, M. G. and Holder, D. J. and
+                        Wolski, A. and Muratori, B. D.",
+      title          = "{Beam tomography in transverse normalised phase space}",
+      journal        = "Nucl. Instrum. Meth.",
+      volume         = "A642",
+      year           = "2011",
+      pages          = "36-44",
+      doi            = "10.1016/j.nima.2011.04.002",
+      SLACcitation   = "%%CITATION = NUIMA,A642,36;%%"
 }
