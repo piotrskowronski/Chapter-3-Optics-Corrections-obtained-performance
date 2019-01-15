@@ -45,50 +45,15 @@ Compare the values to the model.
 
 
  
-Figure \ref{fig:raw_BPM} shows typical traces from a BPM directly read out 
+Figure~\ref{fig:bpm_not_charging_up} shows typical traces from a BPM directly read out 
 from the control system. In the top the current trace is displayed, 
 in the middle the horizontal position and in the bottom the vertical position. 
 Every dip marks one turn in the combiner ring. 
-At first sight it seems like there were losses along the ring 
-since the current is decreasing. 
-However, by comparing the offset in the beginning and in the end of the trace, 
-it is clear that the offset also has changed. 
-Taking this into account we can see that there are only small losses 
-in the first turns and then the beam is circulating without any observable losses.
 
- 
-The change in the offset is more significant for the BPIs than for the BPMs. 
-An example of a signal from a BPI is presented in figure \ref{fig:raw_BPI}. 
-In this case it is also possible to see how the position seems to be drifting. 
-This phenomena has been known for a long time for this type of devices and 
-since it is only observed for the BPIs enables us to conclude that 
-it is not a real drift.  
- 
-
-In the BPIs the charging up effect is much larger and 
-in this case it also affects the position measurement, 
-which is shown in figure \ref{fig:raw_BPI}. 
-Since we can not see this effect on the BPMs we conclude that 
-the drift is not real and the effect can be filtered out. 
-This is done by fitting the function with a second degree polynomial and 
-then subtracking this from the signal. 
-We also took several pulses with the same settings and 
-then took the average pulses and calculated the error bar for the position. 
- 
- 
-An example of a fit over the position is presented in figure \ref{fig:fitOfPosition}. 
-Normally the turns 4-12 was used to fit. 
-An attempt to fit the first turns (1-4) and see if there was a difference 
-in tune in the beginning and the end was made. 
-It was found that this neither could be ruled out or 
-validated because of too big uncertainty in the results, 
-stemming from the few turns. 
-The reason only the 12 first turns could be used was to the strong dechoherence 
+Only the 12 first turns could be used due to strong dechoherence 
 of the oscillation. The oscillation is damped to the closed orbit for the ring. 
 Since the beam normally only does 4 turns in the combiner ring 
 the closed orbit is not well-determined. 
-The closed orbit is interesting to perform different types of measurements to improve 
-the understanding of the optics \cite{Minty_Zimmermann_Book}.
 \begin{figure}[!h]
 \centering
 %\includegraphics[scale=0.26,natwidth=1186,natheight=865]{fit_BPM8.png}
@@ -103,18 +68,13 @@ The fact that the tune or period of a sine is
 independent of amplitude of the oscillation makes the tune measurement 
 independent of absolute calibration errors in the BPMs.
  
-The information we have from each BPM is the position for each turn. 
-Since we only have one sampling per turn the maximum tune we can detect is 0.5. 
-In the the case of a tune of 0.75 or 0.25, they will look the same, 
-due to the aliasing. This can easily be seen from the Nyquist criteria 
-which states that we can only see frequencies half the sampling frequency \cite{wiki:nyqvist}. 
-In order to determine if we are above or below 0.5, 
-we have to change the value of a quadrupole. 
+In order to determine if measure values are above or below 0.5, 
+a quadrupole is changed by a few percent. 
 Depending on if the quadrupole is focusing or 
 defocusing in that plane and if the tune goes up or down it is possible to 
 determine if the tune is above or below 0.5.  
 
-All measurements that were made are summarized in Table~\ref{tab:tuneMeasureTime}. 
+All measurements that were made are summarised in Table~\ref{tab:tuneMeasureTime}. 
 The number in the table corresponds to the number on the x-axis in 
 Figure~\ref{fig:tuneModelVsMeasureHorizontal} and \ref{fig:tuneModelVsMeasureVertical}
 \begin{table}[ht]
